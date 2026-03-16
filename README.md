@@ -65,7 +65,7 @@ Aplikasi frontend akan berjalan di `http://localhost:5173` (default Vite).
 Project ini menggunakan beberapa dataset yang sudah dinormalisasi & dipopulasikan, antara lain:
 
 1. Openstreet Map (query dari plugin quickOSM QGIS) — Data fnb di Balikpapan
-2. GADM (https://gadm.org/download_world.html — Data wilayah administrasi kota Balikpapan
+2. GADM (https://gadm.org/download_world.html) — Data wilayah administrasi kota Balikpapan
 
 ## Lisensi
 [MIT License](LICENSE) — Putri Amalia Sholichah
