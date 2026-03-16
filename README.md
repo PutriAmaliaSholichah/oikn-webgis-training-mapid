@@ -48,6 +48,7 @@ Kredensial default PostGIS:
 Database: geodata
 User: admin
 Password: password123
+
 ### 2. Jalankan Frontend
 ```bash
 cd frontend
@@ -60,8 +61,9 @@ Aplikasi frontend akan berjalan di `http://localhost:5173` (default Vite).
 ### Data Geospasial
 Project ini menggunakan beberapa dataset, antara lain:
 
-Natural Earth — Data batas negara, garis pantai, dan kota-kota di dunia
+1. Natural Earth — Data batas negara, garis pantai, dan kota-kota di dunia
 Tata Ruang — Data RDTR WPKIPP (Rencana Detail Tata Ruang Wilayah Perencanaan Kawasan IKN Penajam Paser)
 QGIS Project — File project QGIS (KIPP IKN.qgz) beserta data sumber dalam format Shapefile, GeoJSON, dan GeoPackage
-Lisensi
-MIT License — Ahmad Zaenun Faiz
+
+## Lisensi
+MIT License — Putri Amalia Sholichah
