@@ -40,9 +40,11 @@ docker compose up -d
 ```
 Layanan yang akan berjalan:
 
-Layanan	URL / Port	Keterangan
-PostGIS	localhost:5433	Database PostgreSQL + ekstensi PostGIS
-GeoServer	http://localhost:8080/geoserver	Panel admin GeoServer
+| Layanan    | URL / Port                    | Keterangan                         |
+| ---------- | ----------------------------- | ---------------------------------- |
+| PostGIS    | `localhost:5433`              | Database PostgreSQL + ekstensi PostGIS |
+| GeoServer  | http://localhost:8080/geoserver | Panel admin GeoServer              |
+
 Kredensial default PostGIS:
 
 Database: geodata
