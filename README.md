@@ -45,7 +45,7 @@ Layanan yang akan berjalan:
 | Layanan    | URL / Port                    | Keterangan                         |
 | ---------- | ----------------------------- | ---------------------------------- |
 | PostGIS    | `localhost:5433`              | Database PostgreSQL + ekstensi PostGIS |
-| GeoServer  | http://localhost:8080/geoserver | Panel admin GeoServer             |
+| GeoServer  | http://localhost:8081/geoserver | Panel admin GeoServer             |
 
 Kredensial default PostGIS:
 Database: webgis
