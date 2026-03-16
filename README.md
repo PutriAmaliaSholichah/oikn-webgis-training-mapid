@@ -10,7 +10,8 @@ Repository ini adalah tugas pelatihan WebGIS yang diselenggarakan oleh MapID unt
 6 **Docker Compose** — Orkestrasi container untuk menjalankan seluruh stack
 
 ## Struktur Repository
-├── frontend/          # Aplikasi web MapLibre + Vite
+```
+├─ frontend/          # Aplikasi web MapLibre + Vite
 │   ├── src/
 │   │   ├── main.js    # Entry point aplikasi
 │   │   ├── map/       # Konfigurasi peta
@@ -20,7 +21,7 @@ Repository ini adalah tugas pelatihan WebGIS yang diselenggarakan oleh MapID unt
 │   │   └── events/    # Map events
 │   └── index.html
 ├── data/              # Data dan konfigurasi GeoServer
-│   ├── workspaces/    # Workspace GeoServer (Workspace: WebGIS_Mapid, Store name: data_fnb_Balikpapan)
+│   ├── workspaces/    # Workspace GeoServer (ne, tata_ruang, dll.)
 │   ├── styles/        # File SLD untuk styling layer
 │   ├── qgis/          # Project QGIS dan data sumber (shapefile, GeoJSON, GeoPackage)
 │   └── ...
@@ -28,6 +29,7 @@ Repository ini adalah tugas pelatihan WebGIS yang diselenggarakan oleh MapID unt
 ├── docker-compose.yml # Konfigurasi Docker untuk PostGIS & GeoServer
 ├── LICENSE            # MIT License
 └── README.md
+```
 
 ## Prasyarat
 1.Docker dan Docker Compose
@@ -46,10 +48,9 @@ Layanan yang akan berjalan:
 | GeoServer  | http://localhost:8080/geoserver | Panel admin GeoServer             |
 
 Kredensial default PostGIS:
-
-Database: geodata
-User: admin
-Password: password123
+Database: webgis
+User: postgres
+Password: postgres
 
 ### 2. Jalankan Frontend
 ```bash
@@ -61,11 +62,10 @@ npm run dev
 Aplikasi frontend akan berjalan di `http://localhost:5173` (default Vite).
 
 ### Data Geospasial
-Project ini menggunakan beberapa dataset, antara lain:
+Project ini menggunakan beberapa dataset yang sudah dinormalisasi & dipopulasikan, antara lain:
 
-1. Natural Earth — Data batas negara, garis pantai, dan kota-kota di dunia
-Tata Ruang — Data RDTR WPKIPP (Rencana Detail Tata Ruang Wilayah Perencanaan Kawasan IKN Penajam Paser)
-QGIS Project — File project QGIS (KIPP IKN.qgz) beserta data sumber dalam format Shapefile, GeoJSON, dan GeoPackage
+1. Openstreet Map (query dari plugin quickOSM QGIS) — Data fnb di Balikpapan
+2. GADM (https://gadm.org/download_world.html — Data wilayah administrasi kota Balikpapan
 
 ## Lisensi
-MIT License — Putri Amalia Sholichah
+[MIT License](LICENSE) — Putri Amalia Sholichah
